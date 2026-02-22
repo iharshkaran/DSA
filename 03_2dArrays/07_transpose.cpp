@@ -22,10 +22,12 @@ int main(){
     }
     cout<<endl;
 
+
+    // LeetCode-867
     //store and print transpose matrix
     int arr2[n][m];
-    for(int i=0;i<n;i++){
-        for(int j=0;j<m;j++){
+    for(int i=0;i<n;i++){ //row
+        for(int j=0;j<m;j++){ //col
             arr2[i][j]=arr1[j][i];
             cout<<arr2[i][j]<<" ";
         }

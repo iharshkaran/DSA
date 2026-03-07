@@ -11,7 +11,7 @@ int main() {
     int n = arr.size();
 
     if(n==1) return arr[0];
-    // Lexographically
+    // Lexicographically
     sort(arr.begin(), arr.end());
     string first = arr[0];
     string last  = arr[n-1];

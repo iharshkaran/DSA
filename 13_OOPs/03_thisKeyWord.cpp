@@ -8,12 +8,16 @@ public:
         this->name = name;
         this->runs = runs;
     }
+    //function
+    void print(){
+        cout<<this->name<<" "<<this->runs<<endl;
+    }
 };
 int main(){
     Cricketer c1("Virat Kohli",28000);
     Cricketer c2("Rohit Sharma",19900);
 
-    cout<<c1.name<<" "<<c1.runs<<endl;
-    cout<<c2.name<<" "<<c2.runs<<endl;
+    c1.print();
+    c2.print();
 
 }

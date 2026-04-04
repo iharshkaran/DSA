@@ -28,19 +28,3 @@ int main(){
 
     cout<<a<<" raised to the power "<<b<<" is "<<power(a,b);
 }
-
-// leetCode - 50 (Run time Limit Exceeded)
-class Solution {
-public:
-    double myPow(double x, int n) {
-        if (n == 0) return 1;
-
-        if (n > 0)
-            return x * myPow(x, n - 1);
-
-        if (n == INT_MIN)
-            return (1 / x) * myPow(1 / x, INT_MAX);
-
-        return (1 / x) * myPow(1 / x, -(n + 1));
-    }
-};

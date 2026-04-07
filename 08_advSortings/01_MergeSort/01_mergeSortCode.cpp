@@ -24,9 +24,9 @@ void mergeSort(vector<int> &v){
     int n1 = n/2 , n2 = n-n/2;
     vector<int> a(n1), b(n2);
     // copy pasting
-    for(int i=0; i<n; i++)
+    for(int i=0; i<n1; i++)
         a[i]=v[i];
-    for(int i=0; i<n; i++)
+    for(int i=0; i<n2; i++)
         b[i]=v[i+n1];
     //Recursion
     mergeSort(a);

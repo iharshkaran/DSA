@@ -9,6 +9,45 @@ public:
         this->next = NULL;
     }
 };
+
+// Print 
+void display(Node* head){
+    Node* temp = head;
+    while(temp!=NULL){
+        cout<<temp->val<<" ";
+        temp = temp->next;
+    }
+    cout<<endl;
+}
+
+// Print using Recursion
+void displayRec(Node* head){ 
+    if(head==NULL){
+        cout<<endl;
+        return;
+    } 
+    cout<<head->val<<" ";
+    display(head->next);
+}
+
+// Reverse
+void revDisplay(Node* head){ 
+    if(head==NULL) return;
+    revDisplay(head->next);
+    cout<<head->val<<" ";
+}
+
+//Size
+int size(Node* head){
+    Node* temp = head;
+    int n=0;
+    while(temp!=NULL){
+        temp = temp->next;
+        n++;
+    }
+    cout<<endl;
+    return n;
+}
 int main(){
     Node* a = new Node(10);
     Node* b = new Node(20);
@@ -17,10 +56,8 @@ int main(){
     a->next = b;
     b->next = c;
     c->next = d;
-    cout<<a->next->next->next->val;
-    // Node* temp = a;
-    // while(temp!=NULL){
-    //     cout<<temp->val<<" ";
-    //     temp = temp->next;
-    // }
+   display(a);
+   revDisplay(a);
+   cout<<size(a);
+    
 }

@@ -1,0 +1,7 @@
+# Output files (Binaries)
+*.exe
+*.out
+
+# System & IDE files
+.DS_Store
+.vscode/

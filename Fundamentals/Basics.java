@@ -10,6 +10,7 @@ public class Basics{
         System.out.println("-----------------------------");
 
         // Data types
+        System.out.println("--- Data Types ---");
         int number = 10;
         double pi = 3.14;
         boolean isJavaFun = true;
@@ -33,7 +34,8 @@ public class Basics{
         System.out.println("-----------------------------");
 
         // Operators
-
+        System.out.println("--- Operators ---");
+        System.out.println("Arithmetic Operators:");
         // Arithmetic operators
         int a = 10;
         int b = 5;
@@ -44,6 +46,7 @@ public class Basics{
         System.out.println("a % b = " + (a % b));
 
         // Relational operators
+        System.out.println("Relational Operators:");
         System.out.println("a == b: " + (a == b));
         System.out.println("a != b: " + (a != b));
         System.out.println("a > b: " + (a > b));
@@ -52,6 +55,7 @@ public class Basics{
         System.out.println("a <= b: " + (a <= b));
 
         // Logical operators
+        System.out.println("Logical Operators:");
         boolean x = true;
         boolean y = false;
         System.out.println("x && y: " + (x && y));
@@ -59,6 +63,7 @@ public class Basics{
         System.out.println("!x: " + (!x));
 
         // Assignment operators
+        System.out.println("Assignment Operators:");
         int c = 10;
         c += 5; // c = c + 5
         System.out.println("c after += 5: " + c);
@@ -72,6 +77,7 @@ public class Basics{
         System.out.println("c after %= 3: " + c);
 
         // Increment and decrement operators
+        System.out.println("Increment and Decrement Operators:");
         int d = 5;
         System.out.println("d: " + d);
         System.out.println("d++: " + (d++)); // Post-increment
@@ -82,6 +88,7 @@ public class Basics{
         System.out.println("-----------------------------");
 
         // Type casting
+        System.out.println("--- Type Casting ---");
         int e = 100;
         double f = e; // Implicit casting (int to double)
         System.out.println("e (int): " + e);
@@ -94,6 +101,7 @@ public class Basics{
         System.out.println("-----------------------------");
 
         // ASCII values
+        System.out.println("--- ASCII Values ---");
         char letter = 'A';
         int asciiValue = letter; // Implicit casting (char to int)
         System.out.println("Letter: " + letter);

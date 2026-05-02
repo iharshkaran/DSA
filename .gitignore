@@ -7,3 +7,9 @@
 .DS_Store
 .vscode/
 *.exe
+
+# Java build files
+out/
+.idea/
+*.iml
+*.class

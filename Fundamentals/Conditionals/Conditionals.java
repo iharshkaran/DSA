@@ -1,3 +1,5 @@
+package Conditionals;
+
 import java.util.Scanner;
 
 public class Conditionals {
@@ -5,9 +7,9 @@ public class Conditionals {
 
         // if statement
         System.out.println("--- if statement ---");
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.print("Enter your Number: ");
-        int number = scanner.nextInt();
+        int number = sc.nextInt();
         if (number%2 == 0) {
             System.out.println("The number is even.");
         } 
@@ -21,11 +23,11 @@ public class Conditionals {
         System.out.println("1. Find the largest of three numbers:");
         
         System.out.print("Enter first number: ");
-        int num1 = scanner.nextInt();
+        int num1 = sc.nextInt();
         System.out.print("Enter second number: ");
-        int num2 = scanner.nextInt();
+        int num2 = sc.nextInt();
         System.out.print("Enter third number: ");
-        int num3 = scanner.nextInt();
+        int num3 = sc.nextInt();
         if (num1 > num2 && num1 > num3) {
             System.out.println("The largest number is: " + num1);
         } else if (num2 > num1 && num2 > num3) {
@@ -37,7 +39,7 @@ public class Conditionals {
         System.out.println("\n");
         System.out.println("2. check if year is leap year or not:");
         System.out.print("Enter a year: ");
-        int year = scanner.nextInt();
+        int year = sc.nextInt();
         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
             System.out.println(year + " is a leap year.");
         } else {
@@ -49,12 +51,12 @@ public class Conditionals {
         System.out.println("--- nested if else statement ---");
 
         System.out.print("Enter first number: ");
-        int n1 = scanner.nextInt();
+        int n1 = sc.nextInt();
         System.out.print("Enter second number: ");
-        int n2 = scanner.nextInt();
+        int n2 = sc.nextInt();
         System.out.print("Enter third number: ");
-        int n3 = scanner.nextInt();
-        
+        int n3 = sc.nextInt();
+
         if(n1 >= n2) {
             if(n1 >= n3) {
                 System.out.println("The largest number is: " + n1);
@@ -72,14 +74,14 @@ public class Conditionals {
         System.out.println("-----------------------------");
         System.out.println("--- Ternary Operator ---");
         System.out.print("Enter a number: ");
-        int num = scanner.nextInt();
+        int num = sc.nextInt();
         System.out.println((num % 2 == 0) ? "Even" : "Odd");
 
         // switch statement
         System.out.println("-----------------------------");
         System.out.println("--- switch statement ---");
         System.out.print("Enter a day of the week (1-7): ");
-        int day = scanner.nextInt();
+        int day = sc.nextInt();
         switch (day) {
             case 1:
                 System.out.println("Monday");

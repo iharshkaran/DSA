@@ -13,5 +13,7 @@ public class ArrayDeclaration {
         for(int ele : arr){
             IO.println(ele);
         }
+
+        sc.close();
     }
 }

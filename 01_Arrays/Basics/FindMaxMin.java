@@ -25,5 +25,7 @@ public class FindMaxMin {
         }
         IO.println("\nMax = "+max);
         IO.println("Min = "+min);
+
+        sc.close();
     }
 }

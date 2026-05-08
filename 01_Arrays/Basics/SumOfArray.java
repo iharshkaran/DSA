@@ -20,6 +20,8 @@ public class SumOfArray {
             sum += arr[i];
         }
         IO.print("\nSum of Array will be "+sum);
+        sc.close();
 
     }
+
 }

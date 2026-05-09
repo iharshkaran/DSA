@@ -5,21 +5,21 @@ import java.util.Scanner;
 public class FindMaxMin {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        IO.print("Enter the size of Array : ");
+        System.out.print("Enter the size of Array : ");
         int n = sc.nextInt();
         int[] arr = new int[n];
         for(int i=0; i<n; i++){
-            IO.print("Enter Element at index " + i + " : ");
+            System.out.print("Enter Element at index " + i + " : ");
             arr[i] = sc.nextInt();
         }
         for(int ele : arr){
-            IO.print(ele + " ");
+            System.out.print(ele + " ");
         }
-        IO.println();
+        System.out.println();
         // max 
-        IO.println("max element is "+ max(arr));
+        System.out.println("max element is "+ max(arr));
         // min
-        IO.println("min element is "+ min(arr));
+        System.out.println("min element is "+ min(arr));
 
         sc.close();
     }

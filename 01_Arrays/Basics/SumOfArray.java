@@ -21,7 +21,5 @@ public class SumOfArray {
         }
         IO.print("\nSum of Array will be "+sum);
         sc.close();
-
     }
-
 }

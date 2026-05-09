@@ -51,7 +51,7 @@ public class Find3rdMaxMin {
         }
         return thirdMax;
     }
-    // 3rd Min using 2 loops
+    // 3rd Min using 3 loops
     public static int thirdMin1(int[] arr){
         int min = Integer.MAX_VALUE;
         int secMin = Integer.MAX_VALUE;

@@ -37,9 +37,7 @@ public class Find2ndMaxMin {
 
         int secMax = Integer.MIN_VALUE;
         for(int i=0; i<arr.length; i++){
-            if(secMax<arr[i] && max != arr[i]){
-                secMax = arr[i];
-            }
+            if(secMax<arr[i] && max != arr[i]) secMax = arr[i];
         }
         return secMax;
     }
@@ -53,9 +51,7 @@ public class Find2ndMaxMin {
 
         int secMin = Integer.MAX_VALUE;
         for(int i=0; i<arr.length; i++){
-            if(secMin>arr[i] && min != arr[i]){
-                secMin = arr[i];
-            }
+            if(secMin>arr[i] && min != arr[i]) secMin = arr[i];
         }
         return secMin;
     }
